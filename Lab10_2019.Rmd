@@ -1,0 +1,40 @@
+---
+title: "Lab 10"
+author: ""
+output:
+  pdf_document: default
+---
+
+```{r, include = F}
+library(dplyr)
+library(readr)
+library(knitr)
+set.seed(11182019)
+```
+
+
+## Lab Overview
+
+This lab will look at sampling with unequal weights using natural gas deliveries. The dataset contains natural gas deliveries (in million cubic feet) for 56 utilities in Montana, Wyoming, Idaho, Utah, Colorado, North Dakota, and South Dakota.
+
+```{r, message = F}
+NG <- read_csv('http://www.math.montana.edu/ahoegh/teaching/stat446/EIA_NG.csv')
+NG
+```
+
+Rather than explicitly calculating the variance for each scenario, we will use the repeated sampling technique from earlier in the class.
+
+#### 1. (4 points)
+Take a simple random sample of size 20 and estimate the total natural gas delivered in this region for the year 2018.
+
+#### 2. (4 points)
+Now repeat the process from part 1 and take 1000 different samples of size 20 and plot the resultant point estimator along with true value.
+
+#### 3. (4 points)
+Take a sample of size 20 with unequal probability using the `weight` column in the dataset. Then estimate the total natural gas delivered in this region for the year 2018 using the Horvitz-Thompson framework.
+
+#### 4. (4 points)
+Now repeat the process from part 3 and take 1000 different samples of size 20 and plot the resultant point estimator along with true value.
+
+#### 5. (4 points)
+Comment on the strengths and weaknesses of the approaches in part 1 and part 3.
