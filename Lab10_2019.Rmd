@@ -31,7 +31,7 @@ Take a simple random sample of size 20 and estimate the total natural gas delive
 Now repeat the process from part 1 and take 1000 different samples of size 20 and plot the resultant point estimator along with true value.
 
 #### 3. (4 points)
-Take a sample of size 20 with unequal probability using the `weight` column in the dataset. Then estimate the total natural gas delivered in this region for the year 2018 using the Horvitz-Thompson framework.
+Take a sample of size 20 with unequal probability using the `weight` column in the dataset. Then estimate the total natural gas delivered in this region for the year 2018 using the Hansen-Hurwitz framework.
 
 #### 4. (4 points)
 Now repeat the process from part 3 and take 1000 different samples of size 20 and plot the resultant point estimator along with true value.
